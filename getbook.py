@@ -16,7 +16,7 @@ def addBook(isbn):
     author = bookJSON['authors'][0]
     description = bookJSON['description']
 
-    client = pymongo.MongoClient('mongodb+srv://katskiUser:y2fqe3XBba27PeA@folio-database.4q0uf.azure.mongodb.net/default')
+    client = pymongo.MongoClient('mongodb+srv://katskiUser:XXXXXX@folio-database.4q0uf.azure.mongodb.net/default')
     db = client['default']
     col = db['books']
     entry = {'title': title, 'year': year, 'author': author, 'description': description}
